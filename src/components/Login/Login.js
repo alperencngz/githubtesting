@@ -112,9 +112,9 @@ const Login = (props) => {
     if (formIsValid) {
       authCtx.onLogIn(emailState.value, passwordState.value);
     } else if (!emailIsValid) {
-      emailInputRef.current.activate();
+      emailInputRef.current.focusAct();
     } else {
-      passwordInputRef.current.activate();
+      passwordInputRef.current.focusAct();
     }
   };
 
